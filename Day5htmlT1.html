@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Appointment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            border-bottom: 2px solid maroon;
+            padding-bottom: 10px;
+            width: 50%;
+            margin: 20px auto;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Doctor Appointment Form</h2>
+
+    <div class="container">
+        <div class="image">
+            <img src="Screenshot 2025-05-24 174917.png" alt="Doctor" width="300">
+        </div>
+
+        <form>
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" name="date"><br>
+
+            <label for="time">Appointment Time</label>
+            <input type="time" id="time" name="time"><br>
+
+            <label for="fname">Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First">
+            <input type="text" id="lname" name="lname" placeholder="Last"><br>
+
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="###"><br>
+
+            <label for="address">Address</label><br>
+            <input type="text" id="city" name="city" placeholder="City">
+            <input type="text" id="state" name="state" placeholder="State"><br>
+
+            <label for="query">Your Query</label><br>
+            <textarea id="query" name="query" rows="4" cols="40"></textarea><br>
+
+            <label>Appointment Type</label><br>
+            <input type="checkbox" id="cervix" name="appointment_type" value="Cervix">
+            <label for="cervix">Cervix checkup</label><br>
+            <input type="checkbox" id="heart" name="appointment_type" value="Heart">
+            <label for="heart">Heart checkup</label><br>
+            <input type="checkbox" id="eye" name="appointment_type" value="Eye">
+            <label for="eye">Eye check-up</label><br>
+            <input type="checkbox" id="hearing" name="appointment_type" value="Hearing">
+            <label for="hearing">Hearing Test</label><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+</body>
+</html>
